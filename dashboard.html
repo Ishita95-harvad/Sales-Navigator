@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+  <h1>Lead Dashboard</h1>
+  <ul>
+  {% for lead in leads %}
+    <li>{{ lead.name }} - {{ lead.email }} - {{ lead.company }}</li>
+  {% endfor %}
+  </ul>
+</body>
+</html>
